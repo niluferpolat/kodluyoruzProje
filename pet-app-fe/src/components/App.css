@@ -1,0 +1,50 @@
+@import '~antd/dist/antd.css';
+body
+{
+  background-color: #bee5d3; 
+  padding: 100px;
+}
+.login-form {
+  max-width: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px;
+  opacity: 0.8;
+  border-radius: 10px;
+  
+}
+.login-form-forgot {
+  color: #726a95;
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+  border-radius: 10px;
+  font-size: large;
+  background-color: #726a95;
+  color: #f9f7cf;
+  justify-content: center;
+
+}
+.login-form-button:hover
+{
+  width: 100%;
+  border-radius: 10px;
+  font-size: large;
+  background-color:#f9f7cf ;
+  color: #726a95;
+  justify-content: center;
+  border: none;
+}
+.username-input
+{
+border-radius: 10px;
+}
+.password-input
+{
+    border-radius: 10px;
+}
