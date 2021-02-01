@@ -1,16 +1,26 @@
 import "./App.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MailOutlined, UserOutlined, LockOutlined } from '@ant-design/icons';
 import {
     Form,
     Input,
     Button,
 } from 'antd';
+import { isAuthenticated } from "../helpers/auth"
 import { signup } from "../api/auth"
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 
 const RegistrationForm = () => {
+    let history = useHistory();
+    useEffect(() => {
+        if (isAuthenticated() && isAuthenticated().role === 1) {
+            history.push('/admin/dashboard');
+        }
+        else if (isAuthenticated() && isAuthenticated().role === 0) {
+            history.push('/user/dashboard')
+        }
+    }, [history])
     const [formData, setFormData] = useState({
         username: '',
         email: '',
