@@ -6,35 +6,34 @@
 	align-items: center;
 	font-size: 1.2rem;
 	position: sticky;
-	top: 0;
+	padding-top: 25px;
 	z-index: 20;
 }
-.nav-container
-{
+.nav-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 80px;
 	max-width: 1500px;
-
 }
 .navbar-logo {
 	color: #fff;
 	align-items: center;
+	margin-top: -30px;
 	margin-left: 20px;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 2rem;
 	flex-grow: 1;
+	font-weight: bold;
 }
-
 
 .nav-menu {
 	display: flex;
 	list-style: none;
 	text-align: center;
-	margin-right: 2rem;
+	margin-right: 0rem;
 }
 
 .nav-links {
@@ -42,75 +41,74 @@
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;
-	border-bottom: 3px solid transparent;
 }
-.nav-item{
+.nav-item {
 	line-height: 30px;
 	margin-right: 1rem;
-	
 }
-.nav-item:after
-{
-	content: "";
+.nav-item:after {
+	content: '';
 	display: block;
 	height: 3px;
 	width: 0;
 	background: transparent;
-	transition:  width .7s ease,background-color .5s ease;
+	transition: width 0.7s ease, background-color 0.5s ease;
 }
-.nav-item:hover:after
-{
-width: 100%;
-background: white;
+.nav-item:hover:after {
+	width: 100%;
+	background: white;
 }
-.nav-item .active
-{
+.nav-item .active {
 	color: white;
-	border:1px solid white;
+	border: 1px solid white;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
 }
 .nav-icon {
 	display: none;
-  }
+}
+
 @media screen and (max-width: 960px) {
 	.nav-menu {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  border-top: 1pxsolid white;
-	  position: absolute;
-	  top: 80px;
-	  left: -110%;
-	  opacity: 1;
-	  transition: all 0.5s ease;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		border-top: 1px solid white;
+		position: absolute;
+		top: 80px;
+		left: -110%;
+		opacity: 1;
+		transition: all 0.5s ease;
 	}
-  
+
 	.nav-menu.active {
-	  background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
-	  left: 0px;
-	  opacity: 1;
-	  transition: all 0.5s ease;
-	  z-index: 1;
+		background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+		left: 0px;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 1;
 	}
 	.nav-item .active {
-	  color: white;
-	  border: none;
+		color: white;
+		border: none;
 	}
 	.nav-links {
-	  padding: 1.5rem;
-	  width: 100%;
-	  display: table;
+		padding: 1.5rem;
+		width: 100%;
+		display: table;
 	}
-  
+
 	.nav-icon {
-	  display: block;
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  transform: translate(-100%, 60%);
-	  font-size: 1.8rem;
-	  cursor: pointer;
-	  color: white;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 60%);
+		font-size: 1.8rem;
+		cursor: pointer;
+		color: white;
 	}
-  }
-
-
+}

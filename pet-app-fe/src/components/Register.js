@@ -34,7 +34,7 @@ const RegistrationForm = () => {
             email,
             password,
             confirmPassword,
-            errorMsg
+            
         } = formData;
     const handleChange = (event) => {
         setFormData({

@@ -1,0 +1,33 @@
+.article {
+	font-size: 15px;
+	margin: 50px 250px 250px;
+	text-indent: 50px;
+	text-align: justify;
+}
+.titleArticle {
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+.timeArticle {
+	padding: 100px;
+	color: white;
+}
+
+.btns {
+	padding: 10px 20px;
+	padding-right: 100px;
+}
+
+.header {
+	/* background-color: rgba(173, 114, 228, 0.205); */
+	background-color: rgba(28, 28, 29, 0.336);
+}
+
+@media screen and (max-width: 1200px) {
+	.article {
+		font-size: 15px;
+		margin: 50px 150px 150px;
+	}
+}

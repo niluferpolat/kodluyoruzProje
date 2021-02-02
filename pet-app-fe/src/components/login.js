@@ -24,7 +24,7 @@ const NormalLoginForm = () => {
     const {
         email,
         password,
-        errorMsg,
+        
 
     } = formData;
     const handleChange = (event) => {
