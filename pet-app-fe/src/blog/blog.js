@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchPosts } from '../actions/post';
-import { List } from 'antd';
+import { Divider, List } from 'antd';
 import { useSelector } from 'react-redux';
 import Post from './post';
 import './blog.css';
@@ -14,6 +14,7 @@ const Blog = () => {
 	return (
 		<>
 			<div className="blogHeader"></div>
+			<Divider />
 			<List
 				grid={{ gutter: 16, column: 4 }}
 				dataSource={posts}
