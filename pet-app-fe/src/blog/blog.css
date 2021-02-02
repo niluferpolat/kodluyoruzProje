@@ -1,0 +1,8 @@
+.blogHeader {
+	background-image: url(./image/blogHeader.gif);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 1000px;
+	width: auto;
+}
