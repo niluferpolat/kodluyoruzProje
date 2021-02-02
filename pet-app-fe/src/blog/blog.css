@@ -8,6 +8,12 @@
 	background-repeat: no-repeat, repeat;
 }
 
+.list {
+margin-left: 50px;
+padding-left: 200px;
+padding-right: 200px;
+}
+
 @media screen and (max-width: 1600px) {
 	.blogHeader {
 		height: 800px;
@@ -16,6 +22,6 @@
 @media screen and (max-width: 1024px) {
 	.blogHeader {
 		height: 700px;
-		width: 1024px;
 	}
+	
 }
