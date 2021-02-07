@@ -80,6 +80,17 @@ const Navbar = ({ history }) => {
 							<li className="nav-item">
 								<NavLink
 									onClick={handleClick}
+									exact
+									to="/"
+									activeClassName="active"
+									className="nav-links"
+								>
+									Anasayfa
+								</NavLink>
+							</li>
+							<li className="nav-item">
+								<NavLink
+									onClick={handleClick}
 									activeClassName="active"
 									exact
 									to="/adoption"
@@ -97,7 +108,7 @@ const Navbar = ({ history }) => {
 									className="nav-links"
 								>
 									Veterinerim
-									</NavLink>
+								</NavLink>
 							</li>
 							<li className="nav-item">
 								<NavLink
@@ -108,9 +119,8 @@ const Navbar = ({ history }) => {
 									className="nav-links"
 								>
 									Blog
-									</NavLink>
+								</NavLink>
 							</li>
-
 						</Fragment>
 					)}
 					{isAuthenticated() && isAuthenticated().role === 1 && (
