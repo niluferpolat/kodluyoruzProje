@@ -9,10 +9,10 @@ const NormalLoginForm = () => {
     let history = useHistory();
     useEffect(() => {
         if (isAuthenticated() && isAuthenticated().role === 1) {
-            history.push('/admin/dashboard');
+            history.push(`/admin/dashboard`);
         }
         else if (isAuthenticated() && isAuthenticated().role === 0) {
-            history.push('/')
+            history.push('/adoption')
         }
     }, [history])
     const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ const NormalLoginForm = () => {
     const {
         email,
         password,
-        
+
 
     } = formData;
     const handleChange = (event) => {
@@ -41,11 +41,11 @@ const NormalLoginForm = () => {
                 setAuthentication(response.data.token, response.data.user);
                 if (isAuthenticated() && isAuthenticated().role === 1) {
                     console.log("redirecting to admin");
-                    history.push('/admin/dashboard');
+                    history.push(`/admin/dashboard`);
                 }
                 else {
+                    history.push(`/adoption`)
                     console.log("redirecting to user");
-                    history.push('/user/dashboard')
                 }
             })
             .catch(err => {

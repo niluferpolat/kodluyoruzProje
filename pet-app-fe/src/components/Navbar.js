@@ -40,7 +40,7 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="/"
+									to="/adoption"
 									className="nav-links"
 								>
 									Sahiplen
@@ -80,12 +80,12 @@ const Navbar = ({ history }) => {
 							<li className="nav-item">
 								<NavLink
 									onClick={handleClick}
-									exact
-									to=""
 									activeClassName="active"
+									exact
+									to="/adoption"
 									className="nav-links"
 								>
-									Anasayfa
+									Sahiplen
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -93,45 +93,24 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="/"
+									to="#"
 									className="nav-links"
 								>
-									Sahiplen
-								</NavLink>
-								<li className="nav-item">
-									<NavLink
-										onClick={handleClick}
-										activeClassName="active"
-										exact
-										to="/"
-										className="nav-links"
-									>
-										Veterinerim
+									Veterinerim
 									</NavLink>
-								</li>
-								<li className="nav-item">
-									<NavLink
-										onClick={handleClick}
-										activeClassName="active"
-										exact
-										to="/"
-										className="nav-links"
-									>
-										Veterinerim
-									</NavLink>
-								</li>
-								<li className="nav-item">
-									<NavLink
-										onClick={handleClick}
-										activeClassName="active"
-										exact
-										to="/posts"
-										className="nav-links"
-									>
-										Blog
-									</NavLink>
-								</li>
 							</li>
+							<li className="nav-item">
+								<NavLink
+									onClick={handleClick}
+									activeClassName="active"
+									exact
+									to="/posts"
+									className="nav-links"
+								>
+									Blog
+									</NavLink>
+							</li>
+
 						</Fragment>
 					)}
 					{isAuthenticated() && isAuthenticated().role === 1 && (
@@ -152,7 +131,7 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="/"
+									to="/adoption"
 									className="nav-links"
 								>
 									Sahiplen

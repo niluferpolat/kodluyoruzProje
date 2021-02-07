@@ -15,10 +15,10 @@ const RegistrationForm = () => {
     let history = useHistory();
     useEffect(() => {
         if (isAuthenticated() && isAuthenticated().role === 1) {
-            history.push('/admin/dashboard');
+            history.push(`/admin/dashboard`);
         }
         else if (isAuthenticated() && isAuthenticated().role === 0) {
-            history.push('/user/dashboard')
+            history.push(`/adoption`)
         }
     }, [history])
     const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const RegistrationForm = () => {
             email,
             password,
             confirmPassword,
-            
+
         } = formData;
     const handleChange = (event) => {
         setFormData({

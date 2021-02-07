@@ -4,7 +4,8 @@ const app = express();
 const morgan = require('morgan');
 const connectDB = require('./db');
 const authRoutes = require('./routes/auth');
-const postRoutes = require('./routes/posts')
+const postRoutes = require('./routes/posts');
+const adoptRoutes = require('./routes/adopts');
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
@@ -14,6 +15,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use('/api/auth', authRoutes)
 app.use('/api/auth', postRoutes);
+app.use('/api/auth', adoptRoutes);//adoption requests' route
 connectDB();
 
 

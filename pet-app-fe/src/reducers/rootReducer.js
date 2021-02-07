@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import postReducer from "./post";
-
-const rootReducer = combineReducers({ posts: postReducer });
+import adoptReducer from "./adopt"
+const rootReducer = combineReducers({ posts: postReducer, adopts: adoptReducer });
 
 export default rootReducer;

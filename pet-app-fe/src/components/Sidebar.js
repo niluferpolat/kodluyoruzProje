@@ -44,7 +44,7 @@ class SideBar extends Component {
                             </Switch>
                         </div>
                     </Content>
-                    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+                    <Footer style={{ textAlign: 'center' }}>Petstagram ©2020 Created by IEN</Footer>
                 </Layout>
             </Layout>
         );

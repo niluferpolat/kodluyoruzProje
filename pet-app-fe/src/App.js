@@ -7,8 +7,10 @@ import Register from "./components/Register"
 import "./components/Navbar/Navbar.css"
 import Navbar from "./components/Navbar"
 import AdminDashboard from "./components/admindashboard";
-import UserDashboard from "./components/User/userdashboard";
 import PostDetails from "./blog/postdetails";
+import Adoption from "./adopt/Adoption"
+import AdoptionDetails from "./adopt/AdoptionDetails"
+import addAdopt from "./User/AddNewAdopt"
 
 function App() {
   return (
@@ -20,11 +22,13 @@ function App() {
         <Route exact path="/posts" component={Blog}></Route>
         <Route exact path="/posts/:id" component={PostDetails}></Route>
         <Route exact path="/signup" component={Register}></Route>
+        <Route exact path="/adoption" component={Adoption}></Route>
         <Route exact path="/admin/dashboard" component={AdminDashboard}></Route>
-        <Route exact path="/user/dashboard" component={UserDashboard}></Route>
+        <Route exact path="/adoption/addAdopt" component={addAdopt}></Route>
+        <Route exact path="/adoption/:id" component={AdoptionDetails}></Route>
         <Route exact component={NotFound}></Route>
       </Switch>
-    </Router>
+    </Router >
   );
 }
 
