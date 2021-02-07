@@ -16,7 +16,8 @@ const Blog = () => {
 			<div className="blogHeader"></div>
 			<Divider />
 			<List
-				grid={{ gutter: 16, column: 4 }}
+				className="list"
+				grid={{ gutter: 5, column: 3 }}
 				dataSource={posts}
 				renderItem={(item) => (
 					<List.Item>

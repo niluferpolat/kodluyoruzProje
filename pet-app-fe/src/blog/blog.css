@@ -5,6 +5,13 @@
 	position: relative;
 	height: 1000px;
 	width: auto;
+	background-repeat: no-repeat, repeat;
+}
+
+.list {
+margin-left: 50px;
+padding-left: 200px;
+padding-right: 200px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -12,8 +19,9 @@
 		height: 800px;
 	}
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	.blogHeader {
-		height: 500px;
+		height: 700px;
 	}
+	
 }
