@@ -29,6 +29,8 @@ const Blog = () => {
 				/>
 
 			</div>
+			<Divider />
+			<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 		</>
 	);
 };
