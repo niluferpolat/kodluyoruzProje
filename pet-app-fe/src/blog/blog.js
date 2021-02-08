@@ -1,11 +1,12 @@
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchPosts } from '../actions/post';
-import { Divider, List } from 'antd';
+import { Divider, List, Layout } from 'antd';
 import { useSelector } from 'react-redux';
 import Post from './post';
 import './blog.css';
 const Blog = () => {
+	const { Footer } = Layout;
 	const dispatch = useDispatch();
 	useEffect(() => {
 		dispatch(fetchPosts());
