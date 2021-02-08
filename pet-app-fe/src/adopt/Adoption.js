@@ -6,7 +6,7 @@ import { isAuthenticated } from '../helpers/auth';
 import { Layout, Divider, Button, Modal, List } from 'antd';
 import Adopt from './Adopt';
 import './Adoption.css';
-const { Content } = Layout;
+const { Content, Footer } = Layout;
 
 function warning() {
 	Modal.warning({
@@ -56,6 +56,8 @@ const Adoption = () => {
 						/>
 					</div>
 				</Content>
+				<Divider />
+				<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 			</div>
 		</>
 	);

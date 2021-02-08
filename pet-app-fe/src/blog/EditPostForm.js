@@ -55,6 +55,7 @@ const EditPostForm = ({ history, post, closeEditMode }) => {
                 </Button>
             </Form.Item>
         </Form>
+
     );
 }
 export default EditPostForm;

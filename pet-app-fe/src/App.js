@@ -11,9 +11,11 @@ import PostDetails from "./blog/postdetails";
 import Adoption from "./adopt/Adoption"
 import AdoptionDetails from "./adopt/AdoptionDetails"
 import addAdopt from "./User/AddNewAdopt"
-
+import { Divider, Layout } from "antd";
+const { Footer } = Layout
 function App() {
   return (
+
     <Router>
       <Navbar />
       <Switch>
@@ -28,7 +30,10 @@ function App() {
         <Route exact path="/adoption/:id" component={AdoptionDetails}></Route>
         <Route exact component={NotFound}></Route>
       </Switch>
+
     </Router >
+
+
   );
 }
 /*git pull*/

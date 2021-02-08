@@ -20,7 +20,7 @@ const PostDetails = ({ history, match }) => {
 	const { id } = match.params;
 	const currentAdopt = useSelector((state) => state.adopts.currentAdopts);
 	const [editMode, setEditMode] = useState(false);
-	const { Content } = Layout;
+	const { Content, Footer } = Layout;
 	const openEditMode = () => {
 		setEditMode(true);
 	};
@@ -38,7 +38,7 @@ const PostDetails = ({ history, match }) => {
 					<p>{currentAdopt?.communication}</p>
 				</div>
 			),
-			onOk() {},
+			onOk() { },
 		});
 	}
 	function showConfirm() {
@@ -63,94 +63,98 @@ const PostDetails = ({ history, match }) => {
 	}, [id, dispatch]);
 
 	return (
-		<Content className="site-layout" style={{ padding: '0 50px' }}>
-			<div className="site-layout-background" style={{ padding: 24, minHeight: 500 }}>
-				<Typography>
-					{editMode ? (
-						<EditAdoptForm adopt={currentAdopt} closeEditMode={closeEditMode} />
-					) : (
-						<div>
-							{isAuthenticated() && (
-								<Fragment>
-									<div className="btns">
-										<Button
-											type="link"
-											style={{
-												float: 'right',
-												fontSize: '20px',
-												borderBlockColor: 'white',
-												color: 'white',
-											}}
-											onClick={showConfirm}
-										>
-											<DeleteTwoTone twoToneColor="#ee99a0" />
-											<Text type="secondary">Sil</Text>
-										</Button>
-										<Button
-											type="link"
-											onClick={openEditMode}
-											style={{
-												float: 'right',
-												fontSize: '20px',
-												borderBlockColor: 'white',
-												color: 'white',
-											}}
-										>
-											<EditTwoTone twoToneColor="#ee99a0" />
-											<Text type="secondary">Düzenle</Text>
-										</Button>
-									</div>
-								</Fragment>
-							)}
-							<Text>{convertRelativeTime(currentAdopt?.createdAt)}</Text>
-							<Text style={{ marginLeft: '380px', fontSize: '30px' }} strong>
-								{currentAdopt?.title}
-							</Text>
-							<Divider />
-							<img
-								style={{ marginLeft: '400px' }}
-								width={400}
-								height={400}
-								src={currentAdopt?.image}
-							/>
-							<br />
-							<Paragraph style={{ marginLeft: '400px', marginTop: '10px' }}>
-								{currentAdopt?.content}
-							</Paragraph>
-							<br />
-							<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
-								<EnvironmentOutlined />
-								{currentAdopt?.town}/{currentAdopt?.province}
-							</Text>
-							<br />
-							<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
-								<strong>Cinsiyeti: </strong>
-								{currentAdopt?.gender}
-							</Text>
-							<br />
-							<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
-								<strong>Yaşı: </strong>
-								{currentAdopt?.age}
-							</Text>
-							<br />
-							<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
-								<strong>Türü: </strong>
-								{currentAdopt?.species}
-							</Text>
-							<br />
-							<Button
-								type="primary"
-								size="large"
-								onClick={info}
-								style={{ marginLeft: '560px', marginTop: '10px' }}
-							>
-								Ulaşın
+		<div>
+			<Content className="site-layout" style={{ padding: '0 50px' }}>
+				<div className="site-layout-background" style={{ padding: 24, minHeight: 500 }}>
+					<Typography>
+						{editMode ? (
+							<EditAdoptForm adopt={currentAdopt} closeEditMode={closeEditMode} />
+						) : (
+								<div>
+									{isAuthenticated() && (
+										<Fragment>
+											<div className="btns">
+												<Button
+													type="link"
+													style={{
+														float: 'right',
+														fontSize: '20px',
+														borderBlockColor: 'white',
+														color: 'white',
+													}}
+													onClick={showConfirm}
+												>
+													<DeleteTwoTone twoToneColor="#ee99a0" />
+													<Text type="secondary">Sil</Text>
+												</Button>
+												<Button
+													type="link"
+													onClick={openEditMode}
+													style={{
+														float: 'right',
+														fontSize: '20px',
+														borderBlockColor: 'white',
+														color: 'white',
+													}}
+												>
+													<EditTwoTone twoToneColor="#ee99a0" />
+													<Text type="secondary">Düzenle</Text>
+												</Button>
+											</div>
+										</Fragment>
+									)}
+									<Text>{convertRelativeTime(currentAdopt?.createdAt)}</Text>
+									<Text style={{ marginLeft: '380px', fontSize: '30px' }} strong>
+										{currentAdopt?.title}
+									</Text>
+									<Divider />
+									<img
+										style={{ marginLeft: '400px' }}
+										width={400}
+										height={400}
+										src={currentAdopt?.image}
+									/>
+									<br />
+									<Paragraph style={{ marginLeft: '400px', marginTop: '10px' }}>
+										{currentAdopt?.content}
+									</Paragraph>
+									<br />
+									<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
+										<EnvironmentOutlined />
+										{currentAdopt?.town}/{currentAdopt?.province}
+									</Text>
+									<br />
+									<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
+										<strong>Cinsiyeti: </strong>
+										{currentAdopt?.gender}
+									</Text>
+									<br />
+									<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
+										<strong>Yaşı: </strong>
+										{currentAdopt?.age}
+									</Text>
+									<br />
+									<Text style={{ marginLeft: '400px', marginTop: '10px' }}>
+										<strong>Türü: </strong>
+										{currentAdopt?.species}
+									</Text>
+									<br />
+									<Button
+										type="primary"
+										size="large"
+										onClick={info}
+										style={{ marginLeft: '560px', marginTop: '10px' }}
+									>
+										Ulaşın
 							</Button>
-						</div>
-					)}
-				</Typography>
-			</div>
-		</Content>
+								</div>
+							)}
+					</Typography>
+				</div>
+			</Content>
+			<Divider />
+			<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
+		</div>
 	);
 };
 export default PostDetails;
