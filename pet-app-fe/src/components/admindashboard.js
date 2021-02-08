@@ -9,7 +9,8 @@ function AdminDashboard() {
         <Router>
             <Sidebar />
             <Switch>
-                <Route exact path="/add_article" component={addArticle}></Route>
+
+
             </Switch>
         </Router>
 
