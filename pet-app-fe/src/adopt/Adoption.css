@@ -20,10 +20,25 @@
 .adoptBody {
 	margin-top: 30px;
 }
-
+.btn_Sahiplendir {
+	margin-top: 530px;
+	margin-left: 220px;
+	font-weight: bold;
+	background-color: white;
+	color: #496ddb;
+	border: none;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.btn_Sahiplendir:hover {
+	background-color: #e0858a;
+	color: white;
+	border: none;
+}
 .site-layout-background {
-	padding: 24px;
-	min-height: 500;
+	min-height: 500px;
 	background-color: rgba(250, 250, 250, 0.39) !important;
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -34,6 +49,7 @@
 }
 .listItems {
 	margin-left: 50px;
+	padding-top: 50px;
 	padding-left: 200px;
 	padding-right: 200px;
 }
@@ -48,11 +64,20 @@
 		padding-left: 100px;
 		padding-right: 100px;
 	}
+	.btn_Sahiplendir {
+		margin-top: 450px;
+		margin-left: 150px;
+	}
 }
 @media screen and (max-width: 960px) {
 	.adoptHeader {
 		background-image: url(./image/adoptHeader2.jpg);
 		background-size: contain;
 		height: 470px;
+	}
+	.btn_Sahiplendir {
+		margin-top: 360px;
+		margin-left: 75px;
+		font-size: 15px;
 	}
 }
