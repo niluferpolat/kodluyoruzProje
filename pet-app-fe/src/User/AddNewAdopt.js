@@ -5,6 +5,7 @@ import FileBase64 from 'react-file-base64';
 import TextArea from 'antd/lib/input/TextArea';
 import { createAdopt } from '../actions/adopt';
 import { Redirect } from 'react-router-dom';
+import './AddNewAdopt.css';
 
 const AddNewAdoption = () => {
 	const [form] = Form.useForm();
@@ -17,8 +18,8 @@ const AddNewAdoption = () => {
 		<Redirect to="/adoption" />;
 	};
 	return (
-		<Content className="site-layout" style={{ padding: '10px 400px' }}>
-			<div className="site-layout-background" style={{ padding: 24, minHeight: 500 }}>
+		<Content className="site-layout">
+			<div className="site-layout-background">
 				<Form
 					className="all-form"
 					form={form}
@@ -54,7 +55,7 @@ const AddNewAdoption = () => {
 							label="Türü"
 							style={{ display: 'inline-block', width: 'calc(12% - 8px)' }}
 						>
-							<Select id="species" style={{ width: 120 }}>
+							<Select id="species">
 								<Option value="kedi">Kedi</Option>
 								<Option value="köpek">Köpek</Option>
 								<Option value="kuş">Kuş</Option>
@@ -68,7 +69,7 @@ const AddNewAdoption = () => {
 							rules={[{ required: true }]}
 							style={{ display: 'inline-block', width: 'calc(12% - 8px)', margin: '0 8px' }}
 						>
-							<Select id="gender" style={{ width: 120 }}>
+							<Select id="gender">
 								<Option value="dişi">Dişi</Option>
 								<Option value="erkek">Erkek</Option>
 							</Select>
@@ -79,7 +80,7 @@ const AddNewAdoption = () => {
 							rules={[{ required: true }]}
 							style={{ display: 'inline-block', width: 'calc(12% - 8px)', margin: '0 8px' }}
 						>
-							<Select id="age" style={{ width: 120 }}>
+							<Select id="age">
 								<Option value="0-1">0-12 Aylık</Option>
 								<Option value="1-7">1-7 Yaşında</Option>
 								<Option value="8-12">8-12 Yaşında</Option>
