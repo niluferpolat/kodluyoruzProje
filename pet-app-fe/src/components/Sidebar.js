@@ -41,7 +41,7 @@ class SideBar extends Component {
 				</Sider>
 				<Layout className="site-layout">
 					<Content className="site-content">
-						<div className="site-layout-background">
+						<div className="site-layout-background2">
 							<Switch>
 								<Route path="/add_article" component={addArticle}></Route>
 								<Route exact path="/posts" component={Blog}></Route>
