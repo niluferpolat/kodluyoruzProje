@@ -26,6 +26,7 @@ const Blog = () => {
 						</List.Item>
 					)}
 				/>
+				<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 			</div>
 		</>
 	);
