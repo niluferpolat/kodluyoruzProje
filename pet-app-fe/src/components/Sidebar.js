@@ -23,7 +23,7 @@ class SideBar extends Component {
 	render() {
 		const { collapsed } = this.state;
 		return (
-			<Layout style={{ minHeight: '100vh' }}>
+			<Layout className="all-layout">
 				<Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse} className="sider">
 					<div className="logo" />
 					<Menu theme="light" defaultSelectedKeys={['1']} mode="inline">
@@ -40,7 +40,7 @@ class SideBar extends Component {
 					</Menu>
 				</Sider>
 				<Layout className="site-layout">
-					<Content className="content">
+					<Content className="site-content">
 						<div className="site-layout-background">
 							<Switch>
 								<Route path="/add_article" component={addArticle}></Route>
@@ -50,7 +50,7 @@ class SideBar extends Component {
 						</div>
 					</Content>
 					<Divider />
-					<Footer className="footer">Petstagram ©2020 Created by IN</Footer>
+					<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 				</Layout>
 			</Layout>
 		);

@@ -1,17 +1,20 @@
+.all-layout {
+	min-height: 100vh;
+}
 .site-layout {
 	background-color: #d4bfbf;
 }
 .site-layout-background {
 	padding: 20px;
-	min-height: 2000px !important;
+	/* min-height: 1700px !important; */
 }
-.content {
+.site-content {
 	margin-top: 10px;
 	margin-left: 16px;
 	margin-right: 16px;
-	min-height: 1800px !important;
+	min-height: 1700px;
 }
-.footer {
+.site-footer {
 	padding-top: 0px;
 	text-align: center;
 	background-color: #d4bfbf;
