@@ -26,7 +26,7 @@ const Adoption = () => {
 				{!isAuthenticated() && (
 					<Fragment>
 						<Button className="btn_Sahiplendir" type="primary" onClick={warning}>
-							Yeni Sahiplendirme İlanı
+							Sahiplendir
 						</Button>
 					</Fragment>
 				)}
