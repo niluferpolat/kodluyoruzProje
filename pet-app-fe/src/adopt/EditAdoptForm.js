@@ -126,7 +126,7 @@ const EditAdoptForm = ({ history, adopt, closeEditMode }) => {
 					/>
 				</Form.Item>
 				<Form.Item>
-					<Button type="primary" htmlType="submit">
+					<Button className="form-btn" type="primary" htmlType="submit">
 						Onayla
 					</Button>
 				</Form.Item>
