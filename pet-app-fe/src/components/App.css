@@ -29,9 +29,10 @@ body{
   width: 100%;
   border-radius: 10px;
   font-size: large;
-  background-color: #726a95;
-  color: #f9f7cf;
+  background-color: #B553F7;
+  color: #fff;
   justify-content: center;
+	border: none;
 
 }
 .login-form-button:hover
@@ -39,10 +40,9 @@ body{
   width: 100%;
   border-radius: 10px;
   font-size: large;
-  background-color:#f9f7cf ;
-  color: #726a95;
+  background-color:#fff ;
+  color: #4E43FD;
   justify-content: center;
-  border: none;
 }
 .username-input
 {
