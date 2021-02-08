@@ -104,44 +104,45 @@ const PostDetails = ({ history, match }) => {
 									</Fragment>
 								)}
 								<Text>{convertRelativeTime(currentAdopt?.createdAt)}</Text>
-								<Text style={{ marginLeft: '380px', fontSize: '30px' }} strong>
+								<Text style={{ marginLeft: '100px', fontSize: '30px' }} strong>
 									{currentAdopt?.title}
 								</Text>
 								<Divider />
-								<div>
+								<div className="adopt-body">
 									<img className="adopt-img" src={currentAdopt?.image} />
 								</div>
 								<Divider type="vertical">
 									<br />
-									<div>
-										<Paragraph style={{ marginLeft: '200px', marginTop: '10px' }}>
+									<div className="adopt-body2">
+										<Paragraph style={{ marginLeft: '00px', marginTop: '10px' }}>
 											{currentAdopt?.content}
 										</Paragraph>
 										<br />
-										<Text style={{ marginLeft: '200px', marginTop: '10px' }}>
+										<Text style={{ marginLeft: '00px', marginTop: '10px' }}>
 											<EnvironmentOutlined />
 											{currentAdopt?.town}/{currentAdopt?.province}
 										</Text>
 										<br />
-										<Text style={{ marginLeft: '200px', marginTop: '10px' }}>
+										<Text style={{ marginLeft: '00px', marginTop: '10px' }}>
 											<strong>Cinsiyeti: </strong>
 											{currentAdopt?.gender}
 										</Text>
 										<br />
-										<Text style={{ marginLeft: '200px', marginTop: '10px' }}>
+										<Text style={{ marginLeft: '00px', marginTop: '10px' }}>
 											<strong>Yaşı: </strong>
 											{currentAdopt?.age}
 										</Text>
 										<br />
-										<Text style={{ marginLeft: '200px', marginTop: '10px' }}>
+										<Text style={{ marginLeft: '00px', marginTop: '10px' }}>
 											<strong>Türü: </strong>
 											{currentAdopt?.species}
 										</Text>
+
+										<br />
+										<Button className="btn_ulas" type="primary" size="large" onClick={info}>
+											Ulaşın
+										</Button>
 									</div>
-									<br />
-									<Button className="btn_ulas" type="primary" size="large" onClick={info}>
-										Ulaşın
-									</Button>
 								</Divider>
 							</div>
 						)}

@@ -14,7 +14,7 @@ const Adopt = ({ _id, title, content, image, gender, createdAt, province, town }
 			<Card
 				className="cardItems"
 				hoverable
-				cover={<img src={image} />}
+				cover={<img className="card-photo" src={image} />}
 				actions={[]}
 			>
 				<Text>{convertRelativeTime(createdAt)}</Text>
