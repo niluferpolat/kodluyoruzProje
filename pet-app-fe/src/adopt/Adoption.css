@@ -1,5 +1,5 @@
-.blogHeader {
-	background-image: url(./image/blogHeader.jpg);
+.adoptHeader {
+	background-image: url(./image/adoptHeader.jpg);
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -11,10 +11,14 @@
 	margin-top: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.blogBody {
-	margin-left: 50px;
-	margin-right: 50px;
-	min-height: 650px;
+
+.adoptBody {
+	margin-top: 30px;
+}
+
+.site-layout-background {
+	padding: 24px;
+	min-height: 500;
 	background-color: rgba(250, 250, 250, 0.39) !important;
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -23,29 +27,27 @@
 	-o-border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.list {
+.listItems {
+	margin-left: 50px;
 	padding-left: 200px;
 	padding-right: 200px;
 }
-
 @media screen and (max-width: 1600px) {
-	.list {
+	.adoptHeader {
+		background-size: cover;
+		height: 600px;
+		max-width: 1805px;
+	}
+	.listItems {
 		margin-left: 20px;
 		padding-left: 100px;
 		padding-right: 100px;
 	}
 }
 @media screen and (max-width: 960px) {
-	.blogHeader {
-		background-image: url(./image/blogHeader.gif);
+	.adoptHeader {
+		background-image: url(./image/adoptHeader2.jpg);
 		background-size: contain;
-		height: 475px;
-	}
-
-	.list {
-		margin-left: 0px;
-		padding-left: 70px;
-		padding-right: 70px;
+		height: 470px;
 	}
 }

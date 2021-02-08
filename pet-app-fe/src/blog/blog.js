@@ -15,16 +15,18 @@ const Blog = () => {
 		<>
 			<div className="blogHeader"></div>
 			<Divider />
-			<List
-				className="list"
-				grid={{ gutter: 5, column: 3 }}
-				dataSource={posts}
-				renderItem={(item) => (
-					<List.Item>
-						<Post {...item} />
-					</List.Item>
-				)}
-			/>
+			<div className="blogBody">
+				<List
+					className="list"
+					grid={{ gutter: 5, column: 3 }}
+					dataSource={posts}
+					renderItem={(item) => (
+						<List.Item>
+							<Post {...item} />
+						</List.Item>
+					)}
+				/>
+			</div>
 		</>
 	);
 };
