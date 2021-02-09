@@ -1,6 +1,9 @@
 import './Home.css';
-
-function Home() {
+import { Link } from "react-router-dom"
+function Home({ history }) {
+	const handleSignin = () => {
+		history.push('/signin');
+	};
 	return (
 		<div id="home">
 			<video autoPlay loop>
@@ -9,23 +12,23 @@ function Home() {
 
 			<div className="Home">
 				<ul>
-					<a href="./homePage">Anasayfa</a>
+					<Link to="/" >Anasayfa</Link>
 				</ul>
 				<hr />
 				<ul>
-					<a href="./homePage">Sahiplen</a>
+					<Link to="/adoption">Sahiplen</Link>
 				</ul>
 				<hr />
 				<ul>
-					<a href="./homePage">En Yakın Veteriner</a>
+					<Link to="/">En Yakın Veteriner</Link>
 				</ul>
 				<hr />
 				<ul>
-					<a href="./homePage">Blog</a>
+					<Link href="/posts">Blog</Link>
 				</ul>
 				<hr />
 				<ul>
-					<button className="btn">
+					<button className="btn" onClick={handleSignin}>
 						Giriş <i className="fas fa-paw"></i>
 					</button>
 				</ul>
