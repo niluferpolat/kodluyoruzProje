@@ -1,41 +1,32 @@
-import React from 'react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './HomePage.css';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-function HomePage() {
-	const slides = [];
-
-	for (let i = 0; i < 5; i += 1) {
-		slides.push(
-			<SwiperSlide key={`slide-${i}`} tag="li">
-				<img src={`https://picsum.photos/id/${i + 1}/2000/700`} alt={`Slide ${i}`} />
-			</SwiperSlide>,
-		);
-	}
-
+export default function HomePage() {
 	return (
-		<React.Fragment>
-			<Swiper
-				id="main"
-				tag="section"
-				wrapperTag="ul"
-				navigation
-				pagination
-				spaceBetween={0}
-				slidesPerView={1}
-				onInit={(swiper) => console.log('Swiper initialized!', swiper)}
-				onSlideChange={(swiper) => {
-					console.log('Slide index changed to: ', swiper.activeIndex);
-				}}
-				onReachEnd={() => console.log('Swiper end reached')}
-			>
-				{slides}
-			</Swiper>
-		</React.Fragment>
+		<Swiper
+			className="swiper-container"
+			autoplay={{ delay: 1000 }}
+			spaceBetween={0}
+			slidesPerView={1}
+			navigation
+			pagination={{ clickable: true }}
+			scrollbar={{ draggable: true }}
+			onSwiper={(swiper) => console.log(swiper)}
+			onSlideChange={() => console.log('slide change')}
+		>
+			<SwiperSlide className="swiper-slide">
+				<img src="/image/adoptHeader.jpg" alt="" className="swiper-wrapper" />
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+				<img src="/image/blogHeader.jpg" alt="" className="swiper-wrapper" />
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+				<img src="/image/adoptHeader.jpg" alt="" className="swiper-wrapper" />
+			</SwiperSlide>
+			...
+		</Swiper>
 	);
 }
-export default HomePage;
