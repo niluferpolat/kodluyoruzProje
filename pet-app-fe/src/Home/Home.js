@@ -12,7 +12,7 @@ const Home = ({ history }) => {
 			</video>
 			<div className="Home">
 				<ul className="home-ul">
-					<Link className="item-home" exact to="/">
+					<Link className="item-home" to="/">
 						Anasayfa
 					</Link>
 				</ul>
@@ -30,7 +30,7 @@ const Home = ({ history }) => {
 				</ul>
 				<hr />
 				<ul className="home-ul">
-					<Link className="item-home" href="/posts">
+					<Link className="item-home" to="/posts">
 						Blog
 					</Link>
 				</ul>
