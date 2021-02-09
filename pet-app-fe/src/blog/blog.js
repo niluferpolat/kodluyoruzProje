@@ -31,7 +31,6 @@ const Blog = () => {
 				spaceBetween={50}
 				effect="coverflow"
 				grabCursor="true"
-				centeredSlides="true"
 				slidesPerView="auto"
 				coverflowEffect={{
 					rotate: 50,
@@ -48,13 +47,19 @@ const Blog = () => {
 				onSlideChange={() => console.log('slide change')}
 			>
 				<SwiperSlide className="swiper-slide2">
-					<img src="/image/Binnaz.jpg" alt="" className="swiper-wrapper2" />
+					<img src="/image/Screenshot_3.jpg" alt="" className="swiper-wrapper2" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Screenshot_2.jpg" alt="" className="swiper-wrapper2" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Diana.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				<SwiperSlide className="swiper-slide2">
 					<img src="/image/Boncuk.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				<SwiperSlide className="swiper-slide2">
-					<img src="/image/Diana.jpg" alt="" className="swiper-wrapper2" />
+					<img src="/image/Screenshot_4.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				<SwiperSlide className="swiper-slide2">
 					<img src="/image/kopus.jpg" alt="" className="swiper-wrapper2" />
@@ -72,13 +77,7 @@ const Blog = () => {
 					<img src="/image/Screenshot_1.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				<SwiperSlide className="swiper-slide2">
-					<img src="/image/Screenshot_2.jpg" alt="" className="swiper-wrapper2" />
-				</SwiperSlide>
-				<SwiperSlide className="swiper-slide2">
-					<img src="/image/Screenshot_3.jpg" alt="" className="swiper-wrapper2" />
-				</SwiperSlide>
-				<SwiperSlide className="swiper-slide2">
-					<img src="/image/Screenshot_4.jpg" alt="" className="swiper-wrapper2" />
+					<img src="/image/Binnaz.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				...
 			</Swiper>
