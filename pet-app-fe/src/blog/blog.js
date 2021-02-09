@@ -25,6 +25,8 @@ const Blog = () => {
 			<Divider />
 			<Swiper
 				className="swiper-container2"
+				tag="section"
+				wrapperTag="ul"
 				navigation
 				spaceBetween={50}
 				effect="coverflow"
@@ -45,38 +47,38 @@ const Blog = () => {
 				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log('slide change')}
 			>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Binnaz.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Binnaz.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Boncuk.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Boncuk.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Diana.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Diana.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/kopus.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/kopus.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Mia.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Mia.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/papagan.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/papagan.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/sila.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/sila.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Screenshot_1.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Screenshot_1.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Screenshot_2.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Screenshot_2.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Screenshot_3.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Screenshot_3.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
-				<SwiperSlide className="swiper-slide">
-					<img src="/image/Screenshot_4.jpg" alt="" className="swiper-wrapper" />
+				<SwiperSlide className="swiper-slide2">
+					<img src="/image/Screenshot_4.jpg" alt="" className="swiper-wrapper2" />
 				</SwiperSlide>
 				...
 			</Swiper>
