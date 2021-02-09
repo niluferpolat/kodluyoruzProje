@@ -8,7 +8,7 @@ export default function HomePage() {
 	return (
 		<Swiper
 			className="swiper-container"
-			autoplay={{ delay: 1000 }}
+			autoplay={{ delay: 3000 }}
 			spaceBetween={0}
 			slidesPerView={1}
 			navigation

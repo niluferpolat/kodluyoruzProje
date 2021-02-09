@@ -146,7 +146,7 @@ const RegistrationForm = () => {
 
 				<Form.Item>
 					<Button className="login-form-button" size="large" type="primary" htmlType="submit">
-						Register
+						Üye Ol <i className="fas fa-paw" />
 					</Button>
 					Zaten Hesabınız Var mı? <Link to="/signin">Giriş Yapın</Link>
 				</Form.Item>
