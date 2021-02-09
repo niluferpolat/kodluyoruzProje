@@ -18,7 +18,7 @@ const Navbar = ({ history }) => {
 	const showNavigation = () => (
 		<nav className="NavbarItems">
 			<div className="nav-container">
-				<NavLink exact to="/" className="navbar-logo">
+				<NavLink exact to="/home" className="navbar-logo">
 					Petstagram.com <i className="fas fa-paw"></i>
 				</NavLink>
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -51,7 +51,7 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="/"
+									to="/map"
 									className="nav-links"
 								>
 									Veterinerim
@@ -104,7 +104,7 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="#"
+									to="/map"
 									className="nav-links"
 								>
 									Veterinerim
@@ -152,7 +152,7 @@ const Navbar = ({ history }) => {
 									onClick={handleClick}
 									activeClassName="active"
 									exact
-									to="/"
+									to="/map"
 									className="nav-links"
 								>
 									Veterinerim
