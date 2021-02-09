@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/login';
 import NotFound from './components/NotFound';
 import Blog from './blog/blog';
-import HomePage from './components/HomePage';
+import HomePage from './HomePage/HomePage';
 import Register from './components/Register';
 import './components/Navbar/Navbar.css';
 import Navbar from './components/Navbar';
