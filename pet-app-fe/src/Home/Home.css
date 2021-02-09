@@ -104,3 +104,9 @@
 	color: #6568f4;
 	transition: 250ms;
 }
+
+@media screen and (max-width: 960px) {
+	#home .Home {
+		margin: 250px 350px;
+	}
+}
