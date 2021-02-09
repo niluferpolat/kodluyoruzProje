@@ -10,7 +10,6 @@ import './blog.css';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
 
 const Blog = () => {
@@ -26,6 +25,8 @@ const Blog = () => {
 			<Divider />
 			<Swiper
 				className="swiper-container2"
+				navigation
+				spaceBetween={50}
 				effect="coverflow"
 				grabCursor="true"
 				centeredSlides="true"
@@ -39,7 +40,10 @@ const Blog = () => {
 				}}
 				pagination={{
 					el: '.swiper-pagination',
+					clickable: true,
 				}}
+				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log('slide change')}
 			>
 				<SwiperSlide className="swiper-slide">
 					<img src="/image/Binnaz.jpg" alt="" className="swiper-wrapper" />
@@ -61,6 +65,18 @@ const Blog = () => {
 				</SwiperSlide>
 				<SwiperSlide className="swiper-slide">
 					<img src="/image/sila.jpg" alt="" className="swiper-wrapper" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide">
+					<img src="/image/Screenshot_1.jpg" alt="" className="swiper-wrapper" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide">
+					<img src="/image/Screenshot_2.jpg" alt="" className="swiper-wrapper" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide">
+					<img src="/image/Screenshot_3.jpg" alt="" className="swiper-wrapper" />
+				</SwiperSlide>
+				<SwiperSlide className="swiper-slide">
+					<img src="/image/Screenshot_4.jpg" alt="" className="swiper-wrapper" />
 				</SwiperSlide>
 				...
 			</Swiper>
