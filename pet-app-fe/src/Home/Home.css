@@ -1,0 +1,105 @@
+#home {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: linear-gradient(50deg, #000b46, #58028a);
+}
+
+#home .Home {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 25px;
+	border-radius: 20px;
+	width: 300px;
+	margin: 250px 800px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+#home video {
+	height: 100vmin;
+	width: 100%;
+	background-position: absolute;
+	z-index: 10;
+	object-fit: cover;
+	/* margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	 */
+}
+
+ul {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	border: 100px;
+}
+
+a {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: transparent;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	background: rgba(243, 236, 236, 0.384);
+	color: #6568f4;
+	transition: 250ms;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding: 1px 10px;
+	border: 1px;
+}
+
+.btn {
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #b553f7;
+	padding: 20px 100px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: 250ms;
+	text-decoration: none;
+}
+
+.btn:hover {
+	padding: 20px 100px;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	background: rgba(255, 255, 255, 0.76);
+	color: #6568f4;
+	transition: 250ms;
+}

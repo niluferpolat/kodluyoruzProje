@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import FileBase64 from 'react-file-base64';
 import TextArea from 'antd/lib/input/TextArea';
 import { updateAdopt } from '../actions/adopt';
+import './EditAdoptForm.css';
 
 const EditAdoptForm = ({ history, adopt, closeEditMode }) => {
 	const [form] = Form.useForm();
@@ -22,7 +23,13 @@ const EditAdoptForm = ({ history, adopt, closeEditMode }) => {
 		history.push('/adoption');
 	};
 	return (
-		<Form form={form} name="addadoption" onFinish={onFinish} scrollToFirstError>
+		<Form
+			className="all-form"
+			form={form}
+			name="addadoption"
+			onFinish={onFinish}
+			scrollToFirstError
+		>
 			<Form.Item
 				name="title"
 				rules={[
@@ -32,7 +39,13 @@ const EditAdoptForm = ({ history, adopt, closeEditMode }) => {
 					},
 				]}
 			>
-				<Input id="title" defaultValue={adopt?.title} name="title" placeholder="Başlık" />
+				<Input
+					id="title"
+					defaultValue={adopt?.title}
+					name="title"
+					placeholder="Başlık"
+					autoComplete="off"
+				/>
 			</Form.Item>
 			<Form.Item name="content">
 				<TextArea
@@ -112,7 +125,7 @@ const EditAdoptForm = ({ history, adopt, closeEditMode }) => {
 				/>
 			</Form.Item>
 			<Form.Item>
-				<Button type="primary" htmlType="submit">
+				<Button className="btn-onayla" type="primary" htmlType="submit">
 					Onayla
 				</Button>
 			</Form.Item>

@@ -1,0 +1,36 @@
+#login-all {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: linear-gradient(50deg, #000b46, #58028a);
+}
+#login-all .login-form {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 25px;
+	border-radius: 20px;
+	width: 300px;
+	margin: 300px 800px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.login-form {
+	position: relative;
+}
+#login-all video {
+	height: 100vmin;
+	width: 100%;
+	background-position: absolute;
+	z-index: -10;
+	object-fit: cover;
+}

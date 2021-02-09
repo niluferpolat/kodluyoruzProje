@@ -6,3 +6,7 @@
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 }
+.card-photo {
+	height: 200px;
+	width: 300px;
+}

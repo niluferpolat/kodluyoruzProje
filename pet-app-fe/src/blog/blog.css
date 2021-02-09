@@ -33,6 +33,27 @@
 	padding-left: 200px;
 	padding-right: 200px;
 }
+.swiper-wrapper2 {
+	padding-inline-start: 0;
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.swiper-container2 {
+	width: 100%;
+	height: 200px;
+}
+
+.swiper-slide2 {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 200px;
+}
 
 @media screen and (max-width: 1600px) {
 	.list {

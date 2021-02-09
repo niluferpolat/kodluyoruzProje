@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Card, Button, Typography } from 'antd';
 import './post.css';
 
-
 const Post = ({ _id, title, content, image, createdAt }) => {
 	const convertRelativeTime = (date) => {
 		return moment(date).fromNow();
@@ -31,8 +30,7 @@ const Post = ({ _id, title, content, image, createdAt }) => {
 					</div>
 				</Card>
 			</div>
-			</>
-		
+		</>
 	);
 };
 export default Post;
