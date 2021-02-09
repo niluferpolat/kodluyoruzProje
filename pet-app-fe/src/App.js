@@ -11,8 +11,7 @@ import PostDetails from './blog/postdetails';
 import Adoption from './adopt/Adoption';
 import AdoptionDetails from './adopt/AdoptionDetails';
 import addAdopt from './User/AddNewAdopt';
-import { Divider, Layout } from 'antd';
-const { Footer } = Layout;
+
 function App() {
 	return (
 		<Router>
@@ -32,5 +31,5 @@ function App() {
 		</Router>
 	);
 }
-/*git pull*/
+
 export default App;
