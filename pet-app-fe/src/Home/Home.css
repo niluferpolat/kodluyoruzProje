@@ -46,7 +46,7 @@ ul {
 	border: 100px;
 }
 
-a {
+.item-home {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
@@ -55,7 +55,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+.item-home:hover {
 	background-color: transparent;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
@@ -74,7 +74,7 @@ a:hover {
 	border: 1px;
 }
 
-.btn {
+.btn-home {
 	font-size: 20px;
 	text-align: center;
 	color: #fff;
@@ -92,7 +92,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.btn:hover {
+.btn-home:hover {
 	padding: 20px 100px;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
