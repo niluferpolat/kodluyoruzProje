@@ -1,6 +1,6 @@
 import './Home.css';
-import { useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+
 const Home = ({ history }) => {
 	const handleSignin = () => {
 		history.push('/signin');
@@ -11,33 +11,33 @@ const Home = ({ history }) => {
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>
 			<div className="Home">
-				<ul>
+				<ul className="home-ul">
 					<Link className="item-home" exact to="/">
 						Anasayfa
 					</Link>
 				</ul>
 				<hr />
-				<ul>
+				<ul className="home-ul">
 					<Link className="item-home" to="/adoption">
 						Sahiplen
 					</Link>
 				</ul>
 				<hr />
-				<ul>
+				<ul className="home-ul">
 					<Link className="item-home" to="/map">
-						En Yakın Veteriner
+						Veterinerim
 					</Link>
 				</ul>
 				<hr />
-				<ul>
+				<ul className="home-ul">
 					<Link className="item-home" href="/posts">
 						Blog
 					</Link>
 				</ul>
 				<hr />
-				<ul>
+				<ul className="home-ul">
 					<button className="btn-home" onClick={handleSignin}>
-						Giriş <i className="fas fa-paw"></i>
+						Giriş <i className="fas fa-paw" />
 					</button>
 				</ul>
 			</div>

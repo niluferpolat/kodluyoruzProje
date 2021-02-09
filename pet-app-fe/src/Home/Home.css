@@ -23,14 +23,14 @@
 	-o-border-radius: 20px;
 	top: 0;
 	left: 0;
-	z-index: 20;
+	z-index: 1;
 }
 
 #home video {
 	height: 100vmin;
 	width: 100%;
 	background-position: absolute;
-	z-index: 10;
+	z-index: -1;
 	object-fit: cover;
 	/* margin-top: 0;
 	margin-bottom: 0;
@@ -39,7 +39,7 @@
 	 */
 }
 
-ul {
+.home-ul {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
@@ -50,7 +50,7 @@ ul {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
-	font-size: 30px;
+	font-size: 28px;
 	color: #fff;
 	text-decoration: none;
 }
@@ -75,11 +75,12 @@ ul {
 }
 
 .btn-home {
+	margin-top: 15px;
 	font-size: 20px;
 	text-align: center;
 	color: #fff;
 	background-color: #b553f7;
-	padding: 20px 100px;
+	padding: 10px 50px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -93,7 +94,7 @@ ul {
 }
 
 .btn-home:hover {
-	padding: 20px 100px;
+	padding: 15px 55px;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
