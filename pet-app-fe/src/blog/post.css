@@ -58,7 +58,7 @@
 	padding: 290px;
 }
 .card:hover {
-	box-shadow: 5px 10px;
+	box-shadow: 5px 10px #888888;
 }
 
 @media screen and (max-width: 1600px) {
