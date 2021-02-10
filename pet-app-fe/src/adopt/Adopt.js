@@ -11,7 +11,7 @@ const Adopt = ({ _id, title, content, image, gender, createdAt, province, town }
 	const { Text } = Typography;
 	return (
 		<>
-			<Card className="cardItems" hoverable actions={[]}>
+			<Card className="cardItems" hoverable>
 				<img className="card-photo" src={image} />
 				<Text>{convertRelativeTime(createdAt)}</Text>
 				<br />
