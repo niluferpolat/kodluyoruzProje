@@ -3,11 +3,13 @@
 	margin: 50px 250px 250px;
 	text-indent: 50px;
 	text-align: justify;
+	color: black;
 }
 .titleArticle {
 	padding-right: 100px;
 	padding-left: 100px;
 	padding-top: 50px;
+	color: black;
 }
 
 .timeArticle {
@@ -21,7 +23,6 @@
 }
 
 .header {
-	/* background-color: rgba(173, 114, 228, 0.205); */
 	background-color: rgba(28, 28, 29, 0.336);
 }
 

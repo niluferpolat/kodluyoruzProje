@@ -1,8 +1,10 @@
 .all-layout {
 	min-height: 100vh;
 }
-.site-layout {
+.site-layout.light {
 	background-color: #d4bfbf;
+}.site-layout.dark {
+	background-color: rgb(59, 58, 58);
 }
 .site-layout-background2 {
 	padding: 20px;
@@ -13,9 +15,4 @@
 	margin-left: 16px;
 	margin-right: 16px;
 	min-height: 1700px;
-}
-.site-footer {
-	padding-top: 0px;
-	text-align: center;
-	background-color: #d4bfbf;
 }

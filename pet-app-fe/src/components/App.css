@@ -5,63 +5,65 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body.light {
 	background-color: rgb(212, 191, 191);
 }
+body.dark {
+	background-color: rgb(59, 58, 58);
+}
 .login-form {
-  max-width: 300px;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 50px;
-  opacity: 0.8;
-  border-radius: 10px;
-  
+	max-width: 300px;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 50px;
+	opacity: 0.8;
+	border-radius: 10px;
 }
 .login-form-forgot {
-  color: #726a95;
-  float: right;
+	color: #726a95;
+	float: right;
 }
 .ant-col-rtl .login-form-forgot {
-  
-  float: left;
+	float: left;
 }
 .login-form-button {
-  width: 100%;
-  border-radius: 10px;
-  font-size: large;
-  background-color: #B553F7;
-  color: #fff;
-  justify-content: center;
+	width: 100%;
+	border-radius: 10px;
+	font-size: large;
+	background-color: #b553f7;
+	color: #fff;
+	justify-content: center;
 	border: none;
-
 }
-.login-form-button:hover
-{
-  width: 100%;
-  border-radius: 10px;
-  font-size: large;
-  background-color:#fff ;
-  color: #4E43FD;
-  justify-content: center;
+.login-form-button:hover {
+	width: 100%;
+	border-radius: 10px;
+	font-size: large;
+	background-color: #fff;
+	color: #4e43fd;
+	justify-content: center;
 }
-.username-input
-{
-border-radius: 10px;
+.username-input {
+	border-radius: 10px;
 }
-.password-input
-{
-    border-radius: 10px;
+.password-input {
+	border-radius: 10px;
 }
 #components-layout-demo-side .logo {
-  height: 32px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
+	height: 32px;
+	margin: 16px;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .site-layout .site-layout-background {
-  background: #fff;
+	background: #fff;
 }
-.sider
-{
-  background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+.sider {
+	background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+}
+.site-footer {
+	padding-top: 0px;
+	justify-content: flex-end !important;
+	text-align: center;
+	background-color: #d4bfbf;
 }
