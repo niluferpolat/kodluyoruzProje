@@ -1,34 +1,46 @@
 .article {
 	font-size: 15px;
-	margin: 50px 250px 250px;
+	margin: 50px 350px 50px 350px;
+	padding-bottom: 400px;
 	text-indent: 50px;
 	text-align: justify;
 	color: black;
 }
 .titleArticle {
 	padding-right: 100px;
-	padding-left: 100px;
+	padding-left: 230px;
 	padding-top: 50px;
 	color: black;
 }
 
 .timeArticle {
-	padding: 100px;
+	padding: 230px;
 	color: white;
 }
 
 .btns {
 	padding: 10px 20px;
-	padding-right: 100px;
+	padding-right: 230px;
 }
 
 .header {
 	background-color: rgba(28, 28, 29, 0.336);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
 	.article {
 		font-size: 15px;
-		margin: 50px 150px 150px;
+		margin: 50px 100px 50px 100px;
+	}
+	.titleArticle {
+		padding-left: 100px;
+		padding-top: 30px;
+	}
+	.timeArticle {
+		padding: 100px;
+	}
+	.btns {
+		padding: 10px 20px;
+		padding-right: 100px;
 	}
 }

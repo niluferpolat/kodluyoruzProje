@@ -5,11 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { isAuthenticated } from '../helpers/auth';
 import { fetchSinglePost, deletePost } from '../actions/post';
 import EditPostForm from './EditPostForm';
-import { Typography, Divider, Button, Modal } from 'antd';
+import { Typography, Divider, Button, Modal, Layout } from 'antd';
 import './postdetails.css';
 const { Title, Paragraph, Text } = Typography;
 const { confirm } = Modal;
 const PostDetails = ({ history, match }) => {
+	const { Footer } = Layout;
 	const { id } = match.params;
 	const currentPost = useSelector((state) => state.posts.currentPost);
 	const [editMode, setEditMode] = useState(false);
@@ -91,6 +92,8 @@ const PostDetails = ({ history, match }) => {
 					<Paragraph className="article">{currentPost?.content}</Paragraph>
 				</div>
 			)}
+			<Divider />
+			<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 		</Typography>
 	);
 };
