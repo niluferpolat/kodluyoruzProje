@@ -34,7 +34,7 @@ exports.fetchAdopt = async (req, res) => {
 };
 exports.fetchFourAdopt = async (req, res) => {
     try {
-        const adopts = await Adopt.find().limit(4);
+        const adopts = await Adopt.find().sort({ "createdAt": -1 }).limit(4);
         res.status(200).json(adopts);
     } catch (error) {
         res.status(404).json({

@@ -13,7 +13,7 @@ exports.getPosts = async (req, res) => {
 exports.getFourPosts = async (req, res) => {
     try {
         const pageSize = 4;
-        const posts = await Posts.find().sort({ createdAt: 1 }).limit(pageSize)
+        const posts = await Posts.find().sort({ "createdAt": -1 }).limit(pageSize)
         res.status(200).json(posts);
     } catch (error) {
         res.status(404).json({
