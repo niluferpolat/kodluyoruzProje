@@ -39,22 +39,14 @@
 	 */
 }
 
-<<<<<<< HEAD
-/*ul {
-=======
 .home-ul {
->>>>>>> ae4030633956c56fb8db23451679ff9531dd1b19
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
 	border: 100px;
 }*/
 
-<<<<<<< HEAD
-.item{
-=======
 .item-home {
->>>>>>> ae4030633956c56fb8db23451679ff9531dd1b19
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
@@ -63,11 +55,7 @@
 	text-decoration: none;
 }
 
-<<<<<<< HEAD
-.item:hover {
-=======
 .item-home:hover {
->>>>>>> ae4030633956c56fb8db23451679ff9531dd1b19
 	background-color: transparent;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
