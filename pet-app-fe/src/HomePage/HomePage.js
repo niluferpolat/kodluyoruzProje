@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Post from '../blog/post'
 import Adopt from "../adopt/Adopt"
 import { fetchFourPosts } from '../actions/post'
+import Navbar from "../components/Navbar"
 import { fetchFourAdopt } from '../actions/adopt'
 import 'swiper/swiper-bundle.css';
 
@@ -24,6 +25,7 @@ export default function HomePage() {
 	const adopts = useSelector((state) => state.adopts.adopts);
 	return (
 		<div>
+			<Navbar />
 			<Swiper
 				className="swiper-container"
 				autoplay={{ delay: 3000 }}

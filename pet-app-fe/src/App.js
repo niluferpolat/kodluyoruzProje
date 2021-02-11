@@ -21,7 +21,6 @@ class App extends Component {
 
 		return (
 			<Router>
-				<Navbar />
 				<Switch>
 					<Route exact path="/" component={Home}></Route>
 					<Route exact path="/signin" component={Login}></Route>
