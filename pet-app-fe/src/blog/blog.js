@@ -9,10 +9,32 @@ import 'swiper/swiper-bundle.min.css';
 import './blog.css';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import anime from 'animejs/lib/anime.es.js';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
-
+/* const textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); */
+//PERŞEMBE HALLEDİLECEK!!!! textContent algılanmıyor.
+anime
+	.timeline({ loop: true })
+	.add({
+		targets: '.ml2 .letter',
+		scale: [4, 1],
+		opacity: [0, 1],
+		translateZ: 0,
+		easing: 'easeOutExpo',
+		duration: 950,
+		delay: (el, i) => 70 * i,
+	})
+	.add({
+		targets: '.ml2',
+		opacity: 0,
+		duration: 1000,
+		easing: 'easeOutExpo',
+		delay: 1000,
+	});
 const Blog = () => {
+
 	const { Footer } = Layout;
 	const dispatch = useDispatch();
 	useEffect(() => {
@@ -21,7 +43,9 @@ const Blog = () => {
 	const posts = useSelector((state) => state.posts.posts);
 	return (
 		<>
-			<div className="blogHeader"></div>
+			<div className="blogHeader">
+				<h1 class="ml2">Petstagram Blog</h1>
+			</div>
 			<Divider />
 			<Swiper
 				className="swiper-container2"

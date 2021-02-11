@@ -1,5 +1,5 @@
 .blogHeader {
-	background-image: url(./image/blogHeader.jpg);
+	background-image: url(./image/blogHeader2.jpg);
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -55,6 +55,19 @@
 	background-size: cover;
 	width: 300px;
 	height: 200px;
+}
+.ml2 {
+	font-weight: bolder;
+	font-size: 80px;
+	color: #6242d1;
+	text-shadow: 2px 2px 5px;
+	margin-left: 860px;
+	padding-top: 90px;
+}
+
+.ml2 .letter {
+	display: inline-block;
+	line-height: 1em;
 }
 
 @media screen and (max-width: 1600px) {
