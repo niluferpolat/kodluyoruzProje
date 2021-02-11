@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchPosts } from '../actions/post';
 import { Divider, List, Layout } from 'antd';
+import Navbar from "../components/Navbar"
 import { useSelector } from 'react-redux';
 import Post from './post';
 import 'swiper/swiper-bundle.css';
@@ -43,6 +44,7 @@ const Blog = () => {
 	const posts = useSelector((state) => state.posts.posts);
 	return (
 		<>
+			<Navbar />
 			<div className="blogHeader">
 				<h1 class="ml2">Petstagram Blog</h1>
 			</div>

@@ -1,6 +1,9 @@
--Pagination prensibi anasayfada uygulanacak 
+[yapıldı]Pagination prensibi anasayfada uygulanacak 
 -Contextapi ve ilçe yazılarak en yakın veterinerleri çekebilir
 -harita temsili durabilir.
 
 
 Bugün bunlar biterse yarın harita ve loading kalıyor
+navbar home.js de görünmeyecek
+[yapıldı]giriş yapıldığı zaman buton değişecek
+[yapıldı]ilk açıldığı zaman home görülecek

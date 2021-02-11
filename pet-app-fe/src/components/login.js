@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { setAuthentication, isAuthenticated } from '../helpers/auth';
 import { Link, useHistory } from 'react-router-dom';
 import { MailOutlined, LockOutlined } from '@ant-design/icons';
+import Navbar from "../components/Navbar"
 import { signin } from '../api/auth';
 import './login.css';
 const NormalLoginForm = () => {
@@ -47,7 +48,9 @@ const NormalLoginForm = () => {
 	};
 
 	return (
+
 		<div id="login-all">
+
 			<video autoPlay loop>
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>

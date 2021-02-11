@@ -2,6 +2,7 @@ import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAdopt } from '../actions/adopt';
 import { Link } from 'react-router-dom';
+import Navbar from "../components/Navbar"
 import { isAuthenticated } from '../helpers/auth';
 import { Layout, Divider, Button, Modal, List } from 'antd';
 import Adopt from './Adopt';
@@ -21,7 +22,7 @@ const Adoption = () => {
 	}, [dispatch]);
 	const adopts = useSelector((state) => state.adopts.adopts);
 	return (
-		<>
+		<><Navbar />
 			<div className="adoptHeader">
 				{!isAuthenticated() && (
 					<Fragment>
