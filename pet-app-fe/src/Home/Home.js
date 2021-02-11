@@ -1,5 +1,4 @@
 import './Home.css';
-import { useState } from "react"
 import { Link, withRouter } from "react-router-dom"
 const Home = ({ history }) => {
 	const handleSignin = () => {
@@ -13,11 +12,11 @@ const Home = ({ history }) => {
 			<div className="Home">
 				<Link className="item" exact to="/" >Anasayfa</Link>
 				<hr />
-				<Link to="/adoption">Sahiplen</Link>
+				<Link className="item" to="/adoption">Sahiplen</Link>
 				<hr />
-				<Link to="/map">En Yakın Veteriner</Link>
+				<Link className="item" to="/map">En Yakın Veteriner</Link>
 				<hr />
-				<Link href="/posts">Blog</Link>
+				<Link className="item" href="/posts">Blog</Link>
 				<hr />
 				<button className="btn" onClick={handleSignin}>
 					Giriş <i className="fas fa-paw"></i>

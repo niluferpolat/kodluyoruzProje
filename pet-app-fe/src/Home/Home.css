@@ -39,14 +39,14 @@
 	 */
 }
 
-ul {
+/*ul {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
 	border: 100px;
-}
+}*/
 
-a {
+.item{
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
@@ -55,7 +55,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+.item:hover {
 	background-color: transparent;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
