@@ -7,11 +7,11 @@ import Post from './post';
 import 'swiper/swiper-bundle.css';
 import 'swiper/swiper-bundle.min.css';
 import './blog.css';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import anime from 'animejs/lib/anime.es.js';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 /* const textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); */
 //PERŞEMBE HALLEDİLECEK!!!! textContent algılanmıyor.
@@ -49,6 +49,7 @@ const Blog = () => {
 			<Divider />
 			<Swiper
 				className="swiper-container2"
+				autoplay={{ delay: 3000 }}
 				tag="section"
 				wrapperTag="ul"
 				navigation
