@@ -1,12 +1,11 @@
 import './Home.css';
 import { Link, withRouter } from 'react-router-dom';
-
 const Home = ({ history }) => {
 	const handleSignin = () => {
 		history.push('/signin');
 	};
 	return (
-		<div id="home">
+		<div id="home">			
 			<video autoPlay loop>
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>
