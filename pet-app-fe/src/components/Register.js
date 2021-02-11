@@ -4,6 +4,7 @@ import { MailOutlined, UserOutlined, LockOutlined } from '@ant-design/icons';
 import { Form, Input, Button } from 'antd';
 import { isAuthenticated } from '../helpers/auth';
 import { signup } from '../api/auth';
+import Navbar from "../components/Navbar"
 import { Link, useHistory } from 'react-router-dom';
 
 const RegistrationForm = () => {
@@ -43,6 +44,7 @@ const RegistrationForm = () => {
 
 	return (
 		<div id="login-all">
+			<Navbar />
 			<video autoPlay loop>
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>

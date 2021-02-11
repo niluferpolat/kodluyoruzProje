@@ -50,7 +50,7 @@ const NormalLoginForm = () => {
 	return (
 
 		<div id="login-all">
-
+			<Navbar />
 			<video autoPlay loop>
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>
