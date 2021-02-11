@@ -7,15 +7,10 @@ import addArticle from "../blog/addArticle";
 
 function AdminDashboard() {
     return (
-        <Router>
+        <div>
             <Navbar />
             <Sidebar />
-            <Switch>
-
-
-            </Switch>
-        </Router>
-
+        </div>
 
 
     )
