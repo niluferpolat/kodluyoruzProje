@@ -9,7 +9,7 @@ import 'swiper/swiper-bundle.min.css';
 import './blog.css';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 /* const textWrapper = document.querySelector('.ml2');
