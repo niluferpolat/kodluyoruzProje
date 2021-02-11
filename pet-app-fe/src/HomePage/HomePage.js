@@ -18,7 +18,7 @@ export default function HomePage() {
 			onSlideChange={() => console.log('slide change')}
 		>
 			<SwiperSlide className="swiper-slide">
-				<img src="/image/adoptHeader.jpg" alt="" className="swiper-wrapper" />
+				<img src="/image/homeHeader.jpg" alt="" className="swiper-wrapper" />
 			</SwiperSlide>
 			<SwiperSlide className="swiper-slide">
 				<img src="/image/blogHeader.jpg" alt="" className="swiper-wrapper" />
