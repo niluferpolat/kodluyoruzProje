@@ -53,7 +53,7 @@ export default function HomePage() {
 		</Swiper>
 			<Divider />
 			<List
-				className="listItems"
+				className="listItems2"
 				grid={{ gutter: 1, column: 4 }}
 				dataSource={adopts}
 				renderItem={(item) => (
@@ -63,7 +63,7 @@ export default function HomePage() {
 				)} />
 			<Divider />
 			<List
-				className="list"
+				className="list2"
 				grid={{ gutter: 2, column: 2 }}
 				dataSource={posts}
 				renderItem={(item) => (
