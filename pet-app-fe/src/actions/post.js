@@ -13,6 +13,17 @@ export const fetchPosts = () => async (dispatch) => {
         console.log(error);
     }
 };
+export const fetchFourPosts = () => async (dispatch) => {
+    try {
+        const { data } = await api.fetchFourPosts();
+        dispatch({
+            type: types.FETCH_FOUR_POSTS,
+            payload: data,
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 export const fetchSinglePost = (id) => async (dispatch) => {
     try {

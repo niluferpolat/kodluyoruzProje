@@ -10,6 +10,17 @@ exports.getPosts = async (req, res) => {
         });
     }
 };
+exports.getFourPosts = async (req, res) => {
+    try {
+        const pageSize = 4;
+        const posts = await Posts.find().limit(pageSize)
+        res.status(200).json(posts);
+    } catch (error) {
+        res.status(404).json({
+            message: error.message,
+        });
+    }
+};
 exports.getSinglePost = async (req, res) => {
     try {
         const { id: _id } = req.params;

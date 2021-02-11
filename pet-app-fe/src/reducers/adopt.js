@@ -18,6 +18,11 @@ const adoptReducer = (state = initialState, action) => {
                 ...state,
                 adopts: action.payload,
             };
+        case types.FETCH_FOUR_ADOPT:
+            return {
+                ...state,
+                adopts: action.payload,
+            };
         case types.FETCH_SINGLE_ADOPT:
             return {
                 ...state,

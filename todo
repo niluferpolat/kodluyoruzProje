@@ -1,2 +1,6 @@
-*sahiplendirme ekle backendi yapılacak
--ekle frontendi yapılacak
+-Pagination prensibi anasayfada uygulanacak 
+-Contextapi ve ilçe yazılarak en yakın veterinerleri çekebilir
+-harita temsili durabilir.
+
+
+Bugün bunlar biterse yarın harita ve loading kalıyor
