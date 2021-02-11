@@ -23,7 +23,7 @@ class App extends Component {
 			<Router>
 				<Navbar />
 				<Switch>
-					<Route exact path="/" component={HomePage}></Route>
+					<Route exact path="/" component={Home}></Route>
 					<Route exact path="/signin" component={Login}></Route>
 					<Route exact path="/posts" component={Blog}></Route>
 					<Route exact path="/posts/:id" component={PostDetails}></Route>
@@ -32,7 +32,7 @@ class App extends Component {
 					<Route exact path="/admin/dashboard" component={AdminDashboard}></Route>
 					<Route exact path="/adoption/addAdopt" component={addAdopt}></Route>
 					<Route exact path="/adoption/:id" component={AdoptionDetails}></Route>
-					<Route exact path="/home" component={Home}></Route>
+					<Route exact path="/home" component={HomePage}></Route>
 					<Route exact path="/map" component={Map}></Route>
 					<Route exact component={NotFound}></Route>
 				</Switch>

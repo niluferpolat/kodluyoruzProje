@@ -5,13 +5,13 @@ const Home = ({ history }) => {
 		history.push('/signin');
 	};
 	return (
-		<div id="home">			
+		<div id="home">
 			<video autoPlay loop>
 				<source src="/Video/home-video.mp4" type="video/mp4" />
 			</video>
 			<div className="Home">
 				<ul className="home-ul">
-					<Link className="item-home" to="/">
+					<Link className="item-home" to="/home">
 						Anasayfa
 					</Link>
 				</ul>
