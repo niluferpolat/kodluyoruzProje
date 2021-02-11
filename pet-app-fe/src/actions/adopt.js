@@ -23,6 +23,17 @@ export const fetchAdopt = () => async (dispatch) => {
         console.log(error);
     }
 };
+export const fetchFourAdopt = () => async (dispatch) => {
+    try {
+        const { data } = await api.fetchFourAdopt();
+        dispatch({
+            type: types.FETCH_FOUR_ADOPT,
+            payload: data,
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
 export const fetchSingleAdopt = (id) => async (dispatch) => {
     try {
         const { data } = await api.fetchSingleAdopt(id);

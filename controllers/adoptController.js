@@ -32,6 +32,16 @@ exports.fetchAdopt = async (req, res) => {
         });
     }
 };
+exports.fetchFourAdopt = async (req, res) => {
+    try {
+        const adopts = await Adopt.find().limit(4);
+        res.status(200).json(adopts);
+    } catch (error) {
+        res.status(404).json({
+            message: error.message,
+        });
+    }
+};
 exports.getSingleAdopt = async (req, res) => {
     try {
         const { id: _id } = req.params;

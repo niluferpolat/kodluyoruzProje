@@ -18,6 +18,11 @@ const postReducer = (state = initialState, action) => {
                 ...state,
                 currentPost: action.payload,
             };
+        case types.FETCH_FOUR_POSTS:
+            return {
+                ...state,
+                posts: action.payload,
+            };
         case types.CREATE_POST:
             return {
                 ...state,
