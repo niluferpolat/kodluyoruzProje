@@ -1,5 +1,5 @@
 import './App.css';
-import { Layout, Menu, Divider } from 'antd';
+import { Layout, Menu } from 'antd';
 import { Link, Switch, Route } from 'react-router-dom';
 import { SnippetsOutlined } from '@ant-design/icons';
 import React, { Component } from 'react';
@@ -7,7 +7,7 @@ import addArticle from '../blog/addArticle';
 import Blog from '../blog/blog';
 import PostDetails from '../blog/postdetails';
 import './Sidebar.css';
-const { Content, Footer, Sider } = Layout;
+const { Content, Sider } = Layout;
 const { SubMenu } = Menu;
 
 class SideBar extends Component {
