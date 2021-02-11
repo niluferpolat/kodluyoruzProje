@@ -1,8 +1,8 @@
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay]);
 
 export default function HomePage() {
 	return (
@@ -18,13 +18,16 @@ export default function HomePage() {
 			onSlideChange={() => console.log('slide change')}
 		>
 			<SwiperSlide className="swiper-slide">
+				<img src="/image/homeHeader.jpg" alt="" className="swiper-wrapper" />
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
 				<img src="/image/adoptHeader.jpg" alt="" className="swiper-wrapper" />
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+				<img src="/image/vetHeader.jpg" alt="" className="swiper-wrapper" />
 			</SwiperSlide>
 			<SwiperSlide className="swiper-slide">
 				<img src="/image/blogHeader.jpg" alt="" className="swiper-wrapper" />
-			</SwiperSlide>
-			<SwiperSlide className="swiper-slide">
-				<img src="/image/adoptHeader.jpg" alt="" className="swiper-wrapper" />
 			</SwiperSlide>
 			...
 		</Swiper>

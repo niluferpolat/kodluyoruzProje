@@ -3,6 +3,7 @@ import './Navbar/Navbar.css';
 import { isAuthenticated, logout } from '../helpers/auth';
 import { NavLink, withRouter } from 'react-router-dom';
 import Button from './Navbar/Button';
+import DarkMode from './DarkMode/DarkMode';
 
 const Navbar = ({ history }) => {
 	const [click, setClick] = useState(false);
@@ -73,6 +74,7 @@ const Navbar = ({ history }) => {
 									Giriş Yap
 								</Button>
 							</li>
+							<DarkMode />
 						</Fragment>
 					)}
 					{isAuthenticated() && isAuthenticated().role === 0 && (
@@ -189,6 +191,7 @@ const Navbar = ({ history }) => {
 									Çıkış Yap
 								</Button>
 							</li>
+							<DarkMode />
 						</Fragment>
 					)}
 				</ul>

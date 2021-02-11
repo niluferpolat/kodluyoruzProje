@@ -1,4 +1,6 @@
 .cardItems {
+	background-color: rgb(248, 245, 245);
+	box-shadow: 5px 10px #8888885e;
 	width: 300px;
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -9,4 +11,16 @@
 .card-photo {
 	height: 200px;
 	width: 300px;
+	margin-left: -25px;
+	margin-top: -25px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.cardItems:hover {
+	box-shadow: 5px 10px #2c2b2b5e;
 }

@@ -49,8 +49,6 @@ class SideBar extends Component {
 							</Switch>
 						</div>
 					</Content>
-					<Divider />
-					<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 				</Layout>
 			</Layout>
 		);
