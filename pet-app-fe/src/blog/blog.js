@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchPosts } from '../actions/post';
 import { Divider, List, Layout } from 'antd';
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar';
 import { useSelector } from 'react-redux';
 import Post from './post';
 import 'swiper/swiper-bundle.css';
@@ -13,9 +13,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import anime from 'animejs';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
-/* const textWrapper = document.querySelector('.ml2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); */
-//PERŞEMBE HALLEDİLECEK!!!! textContent algılanmıyor.
+
+/* 
+const textWrapper = document.querySelector('.ml2');
+textWrapper.dangerouslySetinnerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); */
+
 anime
 	.timeline({ loop: true })
 	.add({
@@ -35,7 +37,6 @@ anime
 		delay: 1000,
 	});
 const Blog = () => {
-
 	const { Footer } = Layout;
 	const dispatch = useDispatch();
 	useEffect(() => {
@@ -50,7 +51,7 @@ const Blog = () => {
 			</div>
 			<Divider />
 			<Swiper
-				className="swiper-container2"
+				className="swiperContainer2"
 				autoplay={{ delay: 3000 }}
 				tag="section"
 				wrapperTag="ul"
