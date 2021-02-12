@@ -1,65 +1,46 @@
-
-
-/*const addMarkers = (locations, map) => {
-    let position;
-    for (let i = 0; i < locations.length; i++) {
-        position = {
-            lat: locations[i].venue.location.lat,
-            lng: locations[i].venue.location.lng
-        }
-    }
-    map.setCenter(position)
-    const marker = new window.H.map.Marker(position);
-    map.addObject(marker);
-    apikey: ""
-     center: ,
-}*/
-
-
-import * as React from 'react';
+import React from "react";
 
 class Map extends React.Component {
-    mapRef = React.createRef();
-
-    state = {
-        // The map instance to use during cleanup
-        map: null
+    markers = [];
+    addMarkers = locations => {
+        if (window.google) {
+            let infowindow = new window.google.maps.InfoWindow();
+            for (let i = 0; i < locations.length; i++) {
+                let marker = new window.google.maps.Marker({
+                    position: {
+                        lat: locations[i].venue.location.lat,
+                        lng: locations[i].venue.location.lng
+                    },
+                    map: window.mapObject,
+                    // title: locations[i].venue.id
+                });
+                marker.addListener("click", () => {
+                    let content = this.props.prepareContent(locations[i]);
+                    infowindow.setContent(content);
+                    infowindow.open(window.mapObject, marker);
+                });
+                this.markers.push(marker);
+                /* 
+ 
+                 ;*/
+            }
+            window.infowindow = infowindow;
+            window.markers = this.markers;
+        }
     };
 
-    componentDidMount() {
-
-        const H = window.H;
-        const platform = new H.service.Platform({
-            apikey: "HwZ27WPyDArOX3J7UvPP5aAbVfCP2hNe7UU0fRBZpwk"
-        });
-
-        const defaultLayers = platform.createDefaultLayers();
-
-        // Create an instance of the map
-        const map = new H.Map(
-            this.mapRef.current,
-            defaultLayers.vector.normal.map,
-            {
-                // This map is centered over Europe
-                center: { lat: 41.1558, lng: 27.8 },
-                zoom: 12,
-                pixelRatio: window.devicePixelRatio || 1
-            }
-        );
-
-        this.setState({ map });
-    }
-
-    componentWillUnmount() {
-        // Cleanup after the map to avoid memory leaks when this component exits the page
-        this.state.map.dispose();
-    }
+    removeMapMarkers = () => {
+        for (let i = 0; i < this.markers.length; i++) {
+            this.markers[i].setMap(null);
+        }
+    };
 
     render() {
-        return (
-            // Set a height on the map so it will display
-            <div ref={this.mapRef} style={{ height: "500px" }} />
-        );
+        console.log("LOCATIONSSSS", this.props.locations);
+        this.removeMapMarkers();
+        this.addMarkers(this.props.locations);
+        return <div id="map" />;
     }
 }
+
 export default Map;
