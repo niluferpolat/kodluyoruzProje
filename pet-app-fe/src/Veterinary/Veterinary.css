@@ -1,15 +1,63 @@
-.App {
-  text-align: center;
-}
-
 #map {
-  min-height: 100vh;
+	min-height: 100vh;
+	margin-left: 480px;
 }
-  #list {
-    width: 25%;
-    height: 100%;
-    background-color: antiquewhite;
-    z-index: 1;
-    position: absolute;
-    overflow-y: scroll;
-  }
+#list {
+	width: 25%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	overflow-y: scroll;
+	margin-left: 10px;
+}
+.vet-title {
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 20px;
+	text-shadow: 2px 5px 3px #636262;
+}
+.vet-input {
+	width: 300px;
+	padding: 7px;
+	margin-left: 80px !important;
+	box-shadow: black;
+	border-color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.vet-name-title {
+	font-size: 16px;
+	margin-left: 10px;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px #774ca5, 0 0 5px #56098a;
+}
+.vet-adres-title {
+	font-size: 16px;
+	margin-left: 10px;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px #774ca5, 0 0 5px #56098a;
+}
+.vet-name {
+	font-size: 17px;
+}
+.vet-adres {
+	margin-left: 10px;
+}
+.vet-list {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 5px 3px #888888;
+	border-color: none;
+	background-color: rgba(245, 245, 245, 0.349);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.vet-list:hover {
+	box-shadow: 2px 5px 3px #525050;
+}
