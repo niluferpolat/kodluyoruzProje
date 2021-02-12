@@ -9,8 +9,17 @@ function AdminDashboard() {
     return (
         <div>
             <Navbar />
-            <Sidebar />
+            <Router>
+                <Sidebar />
+                <Switch>
+
+
+                </Switch>
+            </Router>
+
+
         </div>
+
 
 
     )

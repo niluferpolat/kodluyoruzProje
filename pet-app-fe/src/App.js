@@ -10,6 +10,7 @@ import Map from './Veterinary/Veterinary';
 import AdminDashboard from './components/admindashboard';
 import PostDetails from './blog/postdetails';
 import Adoption from './adopt/Adoption';
+import addArticle from "./blog/addArticle"
 import AdoptionDetails from './adopt/AdoptionDetails';
 import addAdopt from './User/AddNewAdopt';
 import { Component } from 'react';
