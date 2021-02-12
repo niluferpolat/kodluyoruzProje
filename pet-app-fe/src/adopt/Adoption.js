@@ -2,7 +2,7 @@ import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAdopt } from '../actions/adopt';
 import { Link } from 'react-router-dom';
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar';
 import { isAuthenticated } from '../helpers/auth';
 import { Layout, Divider, Button, Modal, List } from 'antd';
 import Adopt from './Adopt';
@@ -22,7 +22,8 @@ const Adoption = () => {
 	}, [dispatch]);
 	const adopts = useSelector((state) => state.adopts.adopts);
 	return (
-		<><Navbar />
+		<>
+			<Navbar />
 			<div className="adoptHeader">
 				{!isAuthenticated() && (
 					<Fragment>
@@ -41,6 +42,11 @@ const Adoption = () => {
 					</Fragment>
 				)}
 			</div>
+			<Divider />
+			<p class="adopt-title">
+				"İnsan ruhunun bir parçası hayvan sevgisini tadana kadar uyanmaz."
+				<p class="adopt-footer">-Anatole France</p>
+			</p>
 			<Divider />
 			<div className="adoptBody">
 				<Content className="site-layout" style={{ padding: '0 50px' }}>

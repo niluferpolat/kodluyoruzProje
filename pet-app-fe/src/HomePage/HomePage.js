@@ -4,12 +4,12 @@ import { Divider, List, Layout } from 'antd';
 import { useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Post from '../blog/post'
-import Adopt from "../adopt/Adopt"
-import { fetchFourPosts } from '../actions/post'
-import Navbar from "../components/Navbar"
-import { fetchFourAdopt } from '../actions/adopt'
-import './HomePage.css'
+import Post from '../blog/post';
+import Adopt from '../adopt/Adopt';
+import { fetchFourPosts } from '../actions/post';
+import Navbar from '../components/Navbar';
+import { fetchFourAdopt } from '../actions/adopt';
+import './HomePage.css';
 import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay]);
@@ -67,15 +67,17 @@ export default function HomePage() {
 			<Divider />
 			<div>
 				<p class="home-blog-title">
-					Bir milletin büyüklüğü ve ahlaki gelişimi, hayvanlara olan davranış biçimi ile
-					değerlendirilir.
+					"Bir milletin büyüklüğü ve ahlaki gelişimi, hayvanlara olan davranış biçimi ile
+					değerlendirilir."
 					<p class="home-blog-footer">-Mahatma Gandhi</p>
 				</p>
 			</div>
 			<Divider />
 			<div>
 				<Link class="home-blog-link">
-					<i class="fas fa-cat"/>Petstagram Blog<i class="fas fa-cat"/>
+					<i class="fas fa-cat" />
+					Petstagram Blog
+					<i class="fas fa-cat" />
 				</Link>
 				<List
 					className="list-home2"
@@ -90,7 +92,7 @@ export default function HomePage() {
 				<Divider />
 				<div>
 					<p class="home-blog-title">
-						Bir kedinin dostluğu tonlarca ilaçtan daha şifalıdır.
+						"Bir kedinin dostluğu tonlarca ilaçtan daha şifalıdır."
 						<p class="home-blog-footer" style={{ marginLeft: 600 }}>
 							-Enzo Jannacci
 						</p>

@@ -6,8 +6,7 @@ import Home from './Home/Home';
 import HomePage from './HomePage/HomePage';
 import Register from './components/Register';
 import './components/Navbar/Navbar.css';
-import Navbar from './components/Navbar';
-import Map from './Veterinary/Veterinary'
+import Map from './Veterinary/Veterinary';
 import AdminDashboard from './components/admindashboard';
 import PostDetails from './blog/postdetails';
 import Adoption from './adopt/Adoption';
@@ -16,9 +15,7 @@ import addAdopt from './User/AddNewAdopt';
 import { Component } from 'react';
 
 class App extends Component {
-
 	render() {
-
 		return (
 			<Router>
 				<Switch>
@@ -38,7 +35,6 @@ class App extends Component {
 			</Router>
 		);
 	}
-
 }
 
 export default App;
