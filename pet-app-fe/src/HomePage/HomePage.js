@@ -67,7 +67,7 @@ export default function HomePage() {
 				)}
 			/>
 			<Divider />
-			<div>
+			<div className="quote-home1">
 				<p class="home-blog-title">
 					"Bir milletin büyüklüğü ve ahlaki gelişimi, hayvanlara olan davranış biçimi ile
 					değerlendirilir."

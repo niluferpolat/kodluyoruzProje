@@ -2,7 +2,6 @@ import React from 'react';
 import './footerDefault.css';
 import { Link } from 'react-router-dom';
 
-
 function FooterDefault() {
 	return (
 		<div className="footer">

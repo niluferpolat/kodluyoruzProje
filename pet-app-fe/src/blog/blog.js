@@ -111,6 +111,16 @@ const Blog = () => {
 				...
 			</Swiper>
 			<Divider />
+			<div className="quote-blog">
+				<p class="home-blog-title">
+					"Bir köpek bir çocuğa sadakat, dayanıklılık ve yatmadan önce kendi etrafında 3 kez dönmeyi
+					öğretir."
+				</p>
+				<p class="blog-footer" style={{ marginLeft: 600 }}>
+					-Robert Benchley
+				</p>
+			</div>
+			<Divider />
 			<div className="blogBody">
 				<List
 					className="list"
