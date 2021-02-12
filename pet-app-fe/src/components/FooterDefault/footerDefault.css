@@ -1,0 +1,30 @@
+.footer {
+	background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+	height: 220px;
+	font-size: 1.2rem;
+	position: sticky;
+	z-index: 20;
+}
+.up-footer {
+	margin-left: 150px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.down-footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-links {
+	color: white;
+	padding-right: 170px;
+}
+.footer-links2 {
+	color: white;
+	padding-right: 50px;
+}

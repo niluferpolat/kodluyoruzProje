@@ -59,7 +59,6 @@ const Home = ({ history }) => {
 						</ul>
 					</Fragment>
 				)}
-
 			</div>
 		</div>
 	);

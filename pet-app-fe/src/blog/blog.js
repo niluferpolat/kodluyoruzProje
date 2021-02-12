@@ -8,6 +8,7 @@ import Post from './post';
 import 'swiper/swiper-bundle.css';
 import 'swiper/swiper-bundle.min.css';
 import './blog.css';
+import FooterDefault from '../components/FooterDefault/footerDefault';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import anime from 'animejs';
@@ -123,6 +124,7 @@ const Blog = () => {
 				/>
 			</div>
 			<Divider />
+			<FooterDefault />
 			<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 		</>
 	);

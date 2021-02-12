@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Divider, List, Layout } from 'antd';
+import { Divider, List, Layout, Footer } from 'antd';
 import { useEffect } from 'react';
+import FooterDefault from '../components/FooterDefault/footerDefault';
 import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Post from '../blog/post';
@@ -11,6 +12,7 @@ import Navbar from '../components/Navbar';
 import { fetchFourAdopt } from '../actions/adopt';
 import './HomePage.css';
 import 'swiper/swiper-bundle.css';
+
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay]);
 
@@ -99,6 +101,8 @@ export default function HomePage() {
 					</p>
 				</div>
 				<Divider />
+				<FooterDefault />
+				<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 			</div>
 		</div>
 	);

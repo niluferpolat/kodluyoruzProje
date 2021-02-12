@@ -62,8 +62,9 @@ body.dark {
 	background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
 }
 .site-footer {
-	padding-top: 0px;
+	color: rgb(184, 184, 184);
+	height: 20px;
 	justify-content: flex-end !important;
 	text-align: center;
-	background-color: #d4bfbf;
+	background-color: #4a0579;
 }

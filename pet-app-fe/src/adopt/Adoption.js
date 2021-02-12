@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchAdopt } from '../actions/adopt';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import FooterDefault from '../components/FooterDefault/footerDefault';
 import { isAuthenticated } from '../helpers/auth';
 import { Layout, Divider, Button, Modal, List } from 'antd';
 import Adopt from './Adopt';
@@ -64,6 +65,7 @@ const Adoption = () => {
 					</div>
 				</Content>
 				<Divider />
+				<FooterDefault />
 				<Footer className="site-footer">Petstagram ©2020 Created by IN</Footer>
 			</div>
 		</>
