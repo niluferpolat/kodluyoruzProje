@@ -1,5 +1,5 @@
 [yapıldı]Pagination prensibi anasayfada uygulanacak 
--Contextapi ve ilçe yazılarak en yakın veterinerleri çekebilir
+
 [yapıldı]harita temsili durabilir.
 
 
@@ -7,3 +7,7 @@
 [Yapıldı]navbar home.js de görünmeyecek
 [yapıldı]giriş yapıldığı zaman buton değişecek
 [yapıldı]ilk açıldığı zaman home görülecek
+-temsili filter olmalı!!
+-Contextapi ve ilçe yazılarak en yakın veterinerleri çekebilir
+-Json verileri halinde il ve ilçeyi çekebiliriz
+-loading
