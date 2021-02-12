@@ -1,5 +1,6 @@
-import React from "react"
-import Map from "./Map"
+import React from "react";
+import Map from "./Map";
+
 class List extends React.Component {
     render() {
         // location list
@@ -19,7 +20,7 @@ class List extends React.Component {
                                         {loc.venue.name}
                                     </a>
                                 </p>
-                                <p>Address: {loc.venue.location.address || loc.venue.location.formattedAddress}</p>
+                                <p>Address: {loc.venue.location.address}</p>
                             </div>
                         </li>
                     ))}
