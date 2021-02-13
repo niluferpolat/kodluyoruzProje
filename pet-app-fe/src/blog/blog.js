@@ -14,8 +14,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import anime from 'animejs';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
-
 /* 
+
 const textWrapper = document.querySelector('.ml2');
 textWrapper.dangerouslySetinnerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); */
 
