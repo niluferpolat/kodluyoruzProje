@@ -1,15 +1,25 @@
 import React from 'react';
 import { Card } from 'antd';
-import Map from './Map';
+//import Map from './Map';
+import Location from "./locations"
 
 class List extends React.Component {
 	render() {
-		// location list
 		const locations = this.props.locations;
+		/*const { input, output, setOutput } = useContext(CityContext);
+		useEffect(() => {
+			request(input).then((response) => {
+				setOutput(response);
+			});
+		}, [input, setOutput]);*/
+
+		// location list
+
 		return (
 			<div id="list">
 				<h2 className="vet-title">Locations</h2>
 				<p>{this.props.queryString}</p>
+				<Location />
 				<input
 					className="vet-input"
 					type="text"
