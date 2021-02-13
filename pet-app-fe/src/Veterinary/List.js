@@ -19,7 +19,7 @@ class List extends React.Component {
 			<div id="list">
 				<h2 className="vet-title">Locations</h2>
 				<p>{this.props.queryString}</p>
-				<Location />
+				<Location LocationFunction={(data) => this.props.LocationFunction(data)} />
 				<input
 					className="vet-input"
 					type="text"
