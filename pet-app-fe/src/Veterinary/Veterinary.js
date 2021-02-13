@@ -33,8 +33,11 @@ class Veterinary extends Component {
 		this.loadScript();
 		return (
 			<>
+
 				<Navbar />
 				<Content />
+
+
 			</>
 		);
 	}
