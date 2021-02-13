@@ -2,7 +2,7 @@ import React from 'react';
 import Map from './Map';
 import List from './List';
 import * as LocationsAPI from '../api/Location';
-
+import Location from "./locations"
 class Content extends React.Component {
 	state = {
 		locations: [],
@@ -57,6 +57,7 @@ class Content extends React.Component {
 
 		return (
 			<>
+				<Location />
 				<List
 					locations={this.state.locations}
 					showInfoContent={this.handleClick}

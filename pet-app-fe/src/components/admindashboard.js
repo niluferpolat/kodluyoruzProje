@@ -12,8 +12,6 @@ function AdminDashboard() {
             <Router>
                 <Sidebar />
                 <Switch>
-
-
                 </Switch>
             </Router>
 
