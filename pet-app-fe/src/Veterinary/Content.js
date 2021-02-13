@@ -10,11 +10,11 @@ class Content extends React.Component {
 		query: "",
 
 	};
-	componentDidMount() {
+	LocationFunction(data) {
+		console.log(data)
 		console.log("DATA");
-		LocationsAPI.getLocations().then(resp =>
-			this.setState({ locations: resp, allLocations: resp })
-		);
+		LocationsAPI.getLocations(data).then(resp =>
+			this.setState({ locations: resp, allLocations: resp }));
 	}
 
 	handleClick = location => {
@@ -63,6 +63,7 @@ class Content extends React.Component {
 					showInfoContent={this.handleClick}
 					queryString={this.state.query}
 					handleChange={this.handleTextChange}
+					LocationFunction={this.LocationFunction.bind(this)}
 				/>
 				<Map
 					locations={this.state.locations}

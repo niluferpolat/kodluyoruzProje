@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useEffect } from "react"
 import il from "./il.json"
 import Select from "react-select"
 
@@ -16,10 +16,13 @@ const Location = (props) => {
         setDistrict(null);
     };
     const handleDistrictChange = (obj) => {
-        setDistrict(obj);
+        setDistrict(obj.ilce);
 
     };
 
+    useEffect(() => {
+        props.LocationFunction(discrict);
+    }, [discrict]);
 
     return (
         <div style={{ width: 400, marginBottom: 20 }}>
